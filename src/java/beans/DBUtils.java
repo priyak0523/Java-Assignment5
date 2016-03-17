@@ -64,7 +64,7 @@ public class DBUtils {
         String dbname = "sai";
         String username = "sai";
         String password = "pass";
-        String jdbc = String.format("jdbc:mysql://%s:%s/%s", hostname, port, dbname);
+        String jdbc = String.format("jdbc:mysql://%s:%s/%s ", hostname, port, dbname);
         return DriverManager.getConnection(jdbc, username, password);
     }
     
